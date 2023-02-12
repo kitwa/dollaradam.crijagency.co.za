@@ -1,0 +1,6 @@
+
+'www.ujisha.com' has been registered.
+Use this site key in the HTML code your site serves to users.
+6Lf_ttsUAAAAAGGSUgFwuzsDNoV1HNpIcKHeTqtV
+Use this secret key for communication between your site and reCAPTCHA.
+6Lf_ttsUAAAAAOeLXtB5iSA92BOgxVft41S2wK4x
