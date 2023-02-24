@@ -84,9 +84,9 @@ $transaction = new Transaction($con, $transactions, null);
         </div>
         <div class="input-field col s6"  >
           <select name="etat" style="display: block;" >
-            <option value="nonretire" selected>NON RETRAITS</option>
-            <option value="retire">RETRAITS</option>
-            <option value="depot">DEPOTS</option>
+            <option value="nonretire" selected>NON RETRAITS $</option>
+            <option value="retire">RETRAITS $</option>
+            <option value="depot">DEPOTS $</option>
           </select>
         </div>
         <div class="col s6">
@@ -104,22 +104,22 @@ $transaction = new Transaction($con, $transactions, null);
       <h3 class="green-text"><?php
           switch ($villeagence) {
             case 'lubumbashi':
-              echo 'LUBUMBASHI';
+              echo 'LUBUMBASHI $';
               break;
             case 'kilwa':
-              echo 'KILWA';
+              echo 'KILWA $';
               break;
             case 'lukozolo':
-              echo 'LUKOZOLO';
+              echo 'LUKOZOLO $';
               break;
             case 'kolwezi':
-              echo 'KOLWEZI';
+              echo 'KOLWEZI $';
               break;
             case 'pweto':
-              echo 'PWETO';
+              echo 'PWETO $';
               break;
             default:
-              echo 'TOUTES LES AGENCES';
+              echo 'TOUTES LES AGENCES $';
               break;
           }
           ?></h3>

@@ -69,9 +69,9 @@ class UploadHandler
 
   private function taux()
   {
-    return "<div class='input-field ' >
+    return "<div class='input-field'>
           <input id='taux' type='number' data-length='25' value='2.5' name='taux' required>
-          <label for='taux'>Taux</label>
+          <label for='taux'>Pourcentage</label>
         </div>";
   }
 
@@ -79,7 +79,7 @@ class UploadHandler
   {
     return "<div class='input-field ' >
           <input id='montantEnvoyer' type='text' data-length='25' name='montantEnvoyer' required>
-          <label for='montantEnvoyer'>Montant A Envoyer</label>
+          <label for='montantEnvoyer'>Montant A Envoyer En $</label>
         </div>";
   }
 
@@ -87,7 +87,7 @@ class UploadHandler
   {
     return "<div class='input-field ' >
           <input id='montantTotal' type='text' data-length='25' name='montantTotal' required>
-          <label for='montantTotal'>Montant Total</label>
+          <label for='montantTotal'>Montant Total en $</label>
         </div>";
   }
 
@@ -95,7 +95,7 @@ class UploadHandler
   {
     return "<div class='input-field ' >
           <input id='gain' type='text' data-length='25' name='gain' required>
-          <label for='gain'>Gain</label>
+          <label for='gain'>Gain en $</label>
         </div>";
   }
 

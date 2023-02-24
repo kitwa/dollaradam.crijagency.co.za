@@ -29,7 +29,7 @@ if (isset($_COOKIE["CrijC"])) {
   <meta http-equiv="Content-Security-Policy" content="script-src 'self' 'unsafe-inline' 'unsafe-eval' https://www.googletagmanager.com/ https://www.gstatic.com/ https://apis.google.com/ https://www.google-analytics.com/; object-src 'self';  default-src 'self'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; media-src *; img-src 'self' https://www.google-analytics.com/ data: content:; font-src 'self' data: https://fonts.gstatic.com; connect-src 'self' https://fcm.googleapis.com  https://www.googleapis.com/ https://apis.google.com/ https://www.google-analytics.com/; frame-src https://www.youtube.com"> 
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0" />
-  <title>CRIJ - 3EME ADAM</title>
+  <title>CRIJ - 3EME ADAM EN $</title>
 
   <!-- <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"> -->
   <link rel="stylesheet" type="text/css" href="plugins/materialize/materialize.min.css" media="screen,projection" />
@@ -50,7 +50,7 @@ if (isset($_COOKIE["CrijC"])) {
 <body>
   <div class="navbar-fixed" style="z-index:1000;">
     <nav class="teal lighten-1" role="navigation">
-      <div class="nav-wrapper pl-20 pr-20"><a id="logo-container" href="#" class="brand-logo">CRIJ - 3EME ADAM</a>
+      <div class="nav-wrapper pl-20 pr-20"><a id="logo-container" href="#" class="brand-logo">CRIJ - 3EME ADAM EN $</a>
         <ul class="right hide-on-med-and-down">
         <li class="red-text">
           <?php 

@@ -36,7 +36,7 @@ class Transaction
       $totalRestPlace = "<div class='col s6'>
       <div class='card grey darken-3'>
         <div class='card-content white-text'>
-          <span class=''>Total Reste sur place (Capital)</span>
+          <span class=''>Total Reste sur place (Capital) en $</span>
           <p>$totalAdmin</p>
         </div>
       </div>
@@ -100,7 +100,7 @@ class Transaction
       <div class='col s6'>
       <div class='card grey darken-3'>
         <div class='card-content white-text'>
-          <span class=''>Sous Total</span>
+          <span class=''>Sous Total en $</span>
           <p>$montantTotalGeneral</p>
         </div>
       </div>
@@ -119,7 +119,7 @@ $rest
 <div class='col s6'>
 <div class='card grey darken-3'>
   <div class='card-content white-text'>
-    <span class=''>Total General</span>
+    <span class=''>Total General en $</span>
     <p>$debutC</p>
   </div>
 </div>
