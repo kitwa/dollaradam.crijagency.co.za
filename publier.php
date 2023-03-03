@@ -67,29 +67,43 @@ if (!isset($_COOKIE["CrijC"])) {
     // cookies end here
 
     $(function() {
-      var gain = 1;
       $("#montantEnvoyer").keyup(function(e) {
         var montantEnvoyer = document.querySelector('#montantEnvoyer').value;
 
-        var taux = document.querySelector('#taux').value;
-        if (taux) {
-          gain = document.querySelector('#gain').value = montantEnvoyer * taux / 100;
-        }
-        document.querySelector('#montantTotal').value = parseInt(montantEnvoyer) + parseInt(gain);
-      });
+        var e = document.getElementById("destination");
+        var destination = e.value;
 
-      $("#taux").keyup(function(e) {
-        var montantEnvoyer = document.querySelector('#montantEnvoyer').value;
-        var taux = document.querySelector('#taux').value;
-
-        if (taux) {
-          gain = document.querySelector('#gain').value = montantEnvoyer * taux / 100;
+        var gain = 0;
+        var x = getCookie('CrijC');
+        if (x == "0640490823" || destination == "lukozolo") {
+          gain = document.querySelector('#gain').value = montantEnvoyer * 0.025;
+        }else if (x == "0640490824" || destination == "kolwezi") {
+          gain = document.querySelector('#gain').value = montantEnvoyer * 0.015;
+        } 
+        else {
+          gain = document.querySelector('#gain').value = montantEnvoyer * 0.02;
         }
+
         document.querySelector('#montantTotal').value = parseInt(montantEnvoyer) + parseInt(gain);
       });
 
     });
 
+    $('select').on('change', function() {
+      var montantEnvoyer = document.querySelector('#montantEnvoyer').value;
+
+      var gain = 0;
+      if (this.value == "lukozolo") {
+          gain = document.querySelector('#gain').value = montantEnvoyer * 0.025;
+        }else if (this.value == "kolwezi") {
+          gain = document.querySelector('#gain').value = montantEnvoyer * 0.015;
+        }  
+        else {
+          gain = document.querySelector('#gain').value = montantEnvoyer * 0.02;
+        }
+
+        document.querySelector('#montantTotal').value = parseInt(montantEnvoyer) + parseInt(gain);
+    });
 
     $(document).ready(function() {
       $('select').formSelect();
