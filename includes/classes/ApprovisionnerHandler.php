@@ -112,6 +112,7 @@ class ApprovisionnerHandler
       <option value='lukozolo'>Lukozolo</option>
       <option value='kilwa'>Kilwa</option>
       <option value='kolwezi'>Kolwezi</option>
+      <option value='kolwezilwilu'>Kolwezi Lwilu</option>
     </select>
     </div>";
   }
@@ -159,6 +160,9 @@ class ApprovisionnerHandler
       case '0640490824':
         $provenance = 'kolwezi';
         break;
+      case '0640490825':
+        $provenance = 'kolwezilwilu';
+        break;
       default:
         $provenance = 'Administrateur';
         break;
@@ -191,6 +195,9 @@ class ApprovisionnerHandler
         break;
       case '0640490824':
         $destinationCompte = 'kolwezi';
+        break;
+      case '0640490825':
+        $destinationCompte = 'kolwezilwilu';
         break;
       default:
         $destinationCompte = 'Administrateur';

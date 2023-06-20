@@ -79,7 +79,8 @@ $transaction = new Transaction($con, $transactions, null);
             <option value="pweto">Pweto</option>
             <option value="lukozolo">Lukozolo</option>
             <option value="kilwa">Kilwa</option>
-            <option value="Kolwezi">Kolwezi</option>
+            <option value="Kolwezi">Kolwezi Cite</option>
+            <option value="kolwezilwilu">Kolwezi Lwilu</option>
           </select>
         </div>
         <div class="input-field col s6"  >
@@ -113,7 +114,10 @@ $transaction = new Transaction($con, $transactions, null);
               echo 'LUKOZOLO $';
               break;
             case 'kolwezi':
-              echo 'KOLWEZI $';
+              echo 'KOLWEZI CITE $';
+              break;
+            case 'kolwezilwilu':
+              echo 'KOLWEZI LWILU $';
               break;
             case 'pweto':
               echo 'PWETO $';

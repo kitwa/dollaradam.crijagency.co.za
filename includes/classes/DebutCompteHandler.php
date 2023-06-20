@@ -9,6 +9,7 @@ class DebutCompteHandler
     private $kilwa;
     private $lukozolo;
     private $kolwezi;
+    private $kolwezilwilu;
     private $total;
 
     public function __construct($con)
@@ -44,7 +45,10 @@ class DebutCompteHandler
                     break;
                 case 'kolwezi':
                     $this->kolwezi = $compte["debutCompte"];
-                    break;                  
+                    break;    
+                case 'kolwezi':
+                    $this->kolwezilwilu = $compte["debutCompte"];
+                    break;               
                 default:
                 $this->total = $compte["debutCompte"];
                     break;
@@ -59,6 +63,7 @@ class DebutCompteHandler
         $kilwa = $this->kilwa();
         $lukozolo = $this->lukozolo();
         $kolwezi = $this->kolwezi();
+        $kolwezilwilu = $this->kolwezilwilu();
         $total = $this->total();
         $uploadButton = $this->createUploadButton();
 
@@ -74,6 +79,7 @@ class DebutCompteHandler
                     $kilwa
                     $lukozolo
                     $kolwezi
+                    $kolwezilwilu
                     $total
                     $uploadButton
                     </div>
@@ -122,6 +128,14 @@ class DebutCompteHandler
         return "<div class='input-field ' >
           <input id='kolwezi' type='text' data-length='25' value='$this->kolwezi' name='kolwezi' required>
           <label for='kolwezi'>Kolwezi</label>
+        </div>";
+    }
+
+    private function kolwezilwilu()
+    {
+        return "<div class='input-field ' >
+          <input id='kolwezilwilu' type='text' data-length='25' value='$this->kolwezilwilu' name='kolwezilwilu' required>
+          <label for='kolwezilwilu'>kolwezi Lwilu</label>
         </div>";
     }
 
